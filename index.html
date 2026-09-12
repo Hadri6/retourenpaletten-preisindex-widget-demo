@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Retourenpaletten-Preisindex – Widget-Demo</title>
+<meta name="description" content="Demo-Seite: So lässt sich das offene Retourenpaletten-Preisindex-Diagramm von RetourenDirekt (CC BY 4.0) in eine Website einbetten.">
+<style>
+  :root { --ink:#1f2933; --muted:#52606d; --line:#d9e2ec; --bg:#f7f9fb; --accent:#0b5cad; }
+  body { margin:0; font:16px/1.6 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; color:var(--ink); background:var(--bg); }
+  main { max-width:860px; margin:0 auto; padding:32px 20px 56px; }
+  h1 { font-size:1.8rem; line-height:1.25; margin:0 0 8px; }
+  h2 { font-size:1.2rem; margin:32px 0 8px; }
+  p { margin:0 0 12px; }
+  .lead { color:var(--muted); }
+  .frame { border:1px solid var(--line); border-radius:8px; background:#fff; overflow:hidden; }
+  iframe { display:block; width:100%; height:560px; border:0; }
+  pre { background:#fff; border:1px solid var(--line); border-radius:8px; padding:14px; overflow-x:auto; font-size:.9rem; }
+  a { color:var(--accent); }
+  footer { margin-top:40px; padding-top:16px; border-top:1px solid var(--line); color:var(--muted); font-size:.9rem; }
+</style>
+</head>
+<body>
+<main>
+  <h1>Retourenpaletten-Preisindex – Widget-Demo</h1>
+  <p class="lead">Diese unabhängige Demoseite zeigt, wie sich das offene Diagramm des <a href="https://retourendirekt.de/preisindex">Retourenpaletten-Preisindex</a> von RetourenDirekt in eine beliebige Website einbinden lässt. Der Index dokumentiert Angebotspreise (keine Transaktionspreise) für Amazon-Retourenpaletten und Restposten in Deutschland und steht unter CC BY 4.0.</p>
+
+  <h2>Live-Demo</h2>
+  <div class="frame">
+    <iframe src="https://retourendirekt.de/preisindex/embed" title="Retourenpaletten-Preisindex – Diagramm" loading="lazy"></iframe>
+  </div>
+  <p>Falls das Diagramm nicht geladen wird: <a href="https://retourendirekt.de/preisindex">Zur Indexseite bei retourendirekt.de</a>.</p>
+
+  <h2>Einbettung</h2>
+  <p>Das Diagramm ist eine eigenständige Seite, die für das Einbetten per <code>iframe</code> freigegeben ist. Es genügt folgender Codeblock:</p>
+<pre><code>&lt;iframe src="https://retourendirekt.de/preisindex/embed"
+        title="Retourenpaletten-Preisindex – Diagramm"
+        width="100%" height="560" loading="lazy" style="border:0"&gt;&lt;/iframe&gt;
+&lt;p&gt;Quelle: &lt;a href="https://retourendirekt.de/preisindex"&gt;Retourenpaletten-Preisindex&lt;/a&gt; (CC BY 4.0)&lt;/p&gt;</code></pre>
+  <p>Höhe und Breite lassen sich frei anpassen; die Segmentauswahl im Diagramm bleibt bedienbar. Bitte den sichtbaren Quellenhinweis unter dem Diagramm belassen.</p>
+
+  <h2>Datenquelle und Lizenz</h2>
+  <p>Quelle: Auctum GmbH – RetourenDirekt, Retourenpaletten-Preisindex. Die Rohdaten (CSV/JSON) sind unter <a href="https://retourendirekt.de/preisindex/daten">retourendirekt.de/preisindex/daten</a> abrufbar, die Erhebungsmethodik unter <a href="https://retourendirekt.de/preisindex/methodik">retourendirekt.de/preisindex/methodik</a>. Lizenz: <a href="https://creativecommons.org/licenses/by/4.0/deed.de">CC BY 4.0</a> – Weiterverwendung mit Namensnennung erlaubt.</p>
+
+  <footer>
+    Demo-Seite ohne Gewähr. Betreiber des Index: Auctum GmbH, Finowfurter Ring 45, 16244 Schorfheide · <a href="https://retourendirekt.de/">retourendirekt.de</a>
+  </footer>
+</main>
+</body>
+</html>
